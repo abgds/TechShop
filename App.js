@@ -1,30 +1,23 @@
 
 import React from 'react';
-import {SafeAreaView,ScrollView,StatusBar,StyleSheet,Text,useColorScheme,View,} from 'react-native';
-
+import {SafeAreaView,ScrollView,StatusBar,StyleSheet,Text,useColorScheme,View,TouchableOpacity, FlatList} from 'react-native';
+import Navigations from './src/User/Navigations';
 
 
 
 const App =()=>{
- 
   return (
-   <View>
-   <Text style={styles.sectionContainer}>
-   This is TechShop Project
-   </Text>
-   </View>
+    <View>
+      <Navigations />
+   
+   
+    </View>
   );
 }
-
 const styles = StyleSheet.create({
-  View:{
-    alignContent:"center"
-  },
-  sectionContainer: {
-    fontSize:"20",
-    fontWeight:"bold",
-    alignContent:"center"
-    
+  container:{
+    backgroundColor:'#ECE3E2',
+    flex:1
   }
 });
 
